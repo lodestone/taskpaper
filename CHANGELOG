@@ -1,4 +1,9 @@
 
+0.1.2
+=====
+
+- Fix untagged_description so it actually works.
+
 0.1.1
 =====
 

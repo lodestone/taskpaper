@@ -8,10 +8,11 @@ module Taskpaper
     end
 
     def untagged_description
+      untagged = description
       tags.each do |tag|
-        line.gsub!(tag, "")
+        untagged.gsub!(tag, "")
       end
-      line
+      untagged.strip
     end
 
     def tag_regex
