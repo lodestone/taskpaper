@@ -8,7 +8,7 @@ module Taskpaper
     end
 
     def untagged_description
-      untagged = description
+      untagged = description.dup
       tags.each do |tag|
         untagged.gsub!(tag, "")
       end
