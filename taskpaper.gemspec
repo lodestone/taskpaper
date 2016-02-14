@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = "0.1"
   spec.authors       = ["Matt Petty"]
   spec.email         = ["matt@kizmeta.com"]
-
+  spec.licenses         = ['MIT']
   spec.summary       = %q{library for interacting with Taskpaper files}
   spec.description   = %q{I suppose I should write a longer description someday.}
   spec.homepage      = "https://github.com/lodestone/taskpaper"
