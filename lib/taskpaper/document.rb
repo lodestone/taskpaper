@@ -1,11 +1,11 @@
 module Taskpaper
   class Document
 
-    attr_accessor :filename, :doc
+    attr_accessor :filename, :doc, :text
 
     def parse
       @doc = []
-      @text.each_line do |line|
+      text.each_line do |line|
         item = Taskpaper::Item.new line
         @doc << item.classify.new(line)
       end
@@ -13,14 +13,17 @@ module Taskpaper
     end
 
     #---------------------
-    def initialize(file)
-      @filename = file
-      @text = File.open(filename, "r").read
+    def initialize(taskpaper)
+      if File.exists?(taskpaper)
+        @text = File.open(taskpaper, "r").read
+      else
+        @text = taskpaper
+      end
       parse
     end
 
     def to_text
-      @text
+      text
     end
 
     def to_html

@@ -1,0 +1,10 @@
+
+0.1.1
+=====
+
+- Taskpaper::Document.new takes a filepath or a string of taskpaper text.
+
+0.1
+===
+
+- Initial version
