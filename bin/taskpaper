@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "thor"
+require_relative "../lib/taskpaper"
+
+class TaskpaperCLI < Thor
+  desc "parse", "parses a taskpaper file"
+  def parse(*args)
+    puts Taskpaper.parse(args.first)
+  end
+end
+
+TaskpaperCLI.start
