@@ -1,8 +1,13 @@
 
+0.1.2.1
+=======
+
+- FIX: untagged_description should not be destructive
+
 0.1.2
 =====
 
-- Fix untagged_description so it actually works.
+- FIX: untagged_description so it actually works.
 
 0.1.1
 =====
